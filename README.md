@@ -1,6 +1,8 @@
 # Portfolio
 
-Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [GavickPro](http://www.gavick.com/).
+Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [GavickPro](http://www.gavick.com/) with some changes by <a href="https://github.com/3c7/Portfolio-Free-Ghost-Theme">3c7</a>.
+
+------------------------------------------------------
 
 [-> DEMO <-](http://portfolio-gk.ghost.io)
 
