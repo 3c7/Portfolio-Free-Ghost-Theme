@@ -29,7 +29,7 @@ html {
 }
 body {
 	background: #000;
-    background-image: url("../images/footer_lodyas.png");
+    background-image: url("../images/dark_wood.png");
 	color: #777;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -43,12 +43,17 @@ body {
 	box-sizing: border-box;
 }
 a {
-	color: #5cc1a9;
+	color: #999;
 	text-decoration: none;
 }
+
+.post__content a {
+    text-decoration: underline;
+}
+
 a:active,
 a:focus,
-a:hover { color: #363636; }
+a:hover { color: #444; }
 img { max-width: 100%; }
 h1,
 h2,
@@ -287,17 +292,16 @@ main {
 .pagination__item--link:active,
 .pagination__item--link:focus,
 .pagination__item--link:hover {
-	color: #5cc1a9;
+	color: #333;
 }
 .pagination__item--older {
 	padding: 0 25px 0 0;
 }
 .pagination__item--older:after,
 .pagination__item--newer:before {
-	border-left: 1px solid #d5d5d5;
 	content: "";
 	display: inline-block;
-	left: -25px;
+	left: 25px;
 	height: 18px;
 	position: relative;
 	top: 3px;
@@ -305,7 +309,7 @@ main {
 }
 .pagination__item--older:after {
 	left: auto;
-	right: -25px;
+	right: 25px;
 }
 .pagination__item--counter {
 	padding: 0 20px;
@@ -439,12 +443,13 @@ main {
 
 .post__title_link {
 	color: #333;
+    font-family: "Montserrat";
 }
 
 .post__link:active,
 .post__link:focus,
 .post__link:hover {
-	color: #5cc1a9;
+	color: #333;
 }
 
 .post__date {
@@ -490,7 +495,7 @@ main {
 
 .post__meta:before {
 	bottom: 0;
-	color: #5cc1a9;
+	color: #444;
 	content: "i";
 	display: block;
 	font-size: 24px;
@@ -567,6 +572,7 @@ main {
 	height: auto;
 	margin: 0 60px 0 0;
 	max-width: 80px;
+    border-radius: 50%;
 }
 
 .author__name {
@@ -672,19 +678,14 @@ ul {
 	}
 
 	.menu__item--active {
-		background: #5cc1a9;
-		border-color: #5cc1a9;
-		color: #fff;
 	}
 
 	.menu__item--active:active,
 	.menu__item--active:focus,
 	.menu__item--active:hover {
-		color: #fff;
 	}
 
 	.menu__item--active + .menu__item {
-		border-top: none;
 	}
 
 	.menu--open .menu__wrap {
@@ -748,5 +749,11 @@ ul {
 6. Additional changes by Nils Kuhnert
 ----------------------------------*/
 h2.main__header {
+    display: none;
+}
+aside.author {
+    display: none;
+}
+footer.footer {
     display: none;
 }

@@ -1,12 +1,13 @@
 {{!-- In this file you can override your pagination --}}
+
 <nav class="pagination">
     <div class="pagination__wrap">
-	    {{#if next}}
-	        <a class="pagination__item pagination__item--link pagination__item--older" href="{{page_url next}}">&Auml;ltere Beitr&auml;ge</a>
-	    {{/if}}
-	   	<span class="pagination__item pagination__item--counter">Seite {{page}} von {{pages}}</span>
 	    {{#if prev}}
-	        <a class="pagination__item pagination__item--link pagination__item--newer" href="{{page_url prev}}">Neuere Beitr&auml;ge</a>
+	        <a class="pagination__item pagination__item--link pagination__item--newer" href="{{page_url prev}}"><</a>
+	    {{/if}}
+        <span class="pagination__item pagination__item--counter">Seite {{page}} von {{pages}}</span>
+	    {{#if next}}
+	        <a class="pagination__item pagination__item--link pagination__item--older" href="{{page_url next}}">></a>
 	    {{/if}}
 	</div>
 </nav>
