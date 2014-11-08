@@ -459,16 +459,12 @@ main {
 
 .post__media {	
     background: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:  0;
-    margin-bottom: 75px;
+    margin: 0 auto 50px auto;
 	padding: 15px 15px 8px 15px;
 	max-width: 1024px;
 }
 
 .post__media img {
-    margin: 0px;
     padding: 0px;
     -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, .7);
 	-moz-box-shadow: 0 0 13px rgba(0, 0, 0, .7);
@@ -665,6 +661,9 @@ ul {
 	.post__wrapper--subpage {
 		max-width: 95%;
 	}
+    .post__media {
+        width: 99%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -713,7 +712,7 @@ ul {
 		padding: 72px 36px 20px 36px;
 	}
 	.post__media {
-		margin: -72px -36px 20px -36px;
+		margin: 20px 0px 36px 0px;
 	}
 	.post__title--subpage {
 		font-size: 26px;
