@@ -218,7 +218,7 @@ main {
 	font-weight: 400;
 	margin: 0 auto;
 	max-width: 1100px;
-	padding: 72px 0;
+	padding: 15px 0;
 	text-align: center;
 	width: 100%;
 }
@@ -462,6 +462,7 @@ main {
     margin: 0 auto 50px auto;
 	padding: 15px 15px 8px 15px;
 	max-width: 1024px;
+    text-align: center;
 }
 
 .post__media img {
@@ -662,7 +663,7 @@ ul {
 		max-width: 95%;
 	}
     .post__media {
-        width: 99%;
+        /*width: 100%;*/
     }
 }
 
@@ -712,8 +713,9 @@ ul {
 		padding: 72px 36px 20px 36px;
 	}
 	.post__media {
-		margin: 20px 0px 36px 0px;
+		margin: 20px 0px 36px 0px; 
 	}
+    
 	.post__title--subpage {
 		font-size: 26px;
 	}
@@ -767,8 +769,5 @@ h2.main__header {
     display: none;
 }
 aside.author {
-    display: none;
-}
-footer.footer {
     display: none;
 }
