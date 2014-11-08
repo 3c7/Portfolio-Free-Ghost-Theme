@@ -1,10 +1,9 @@
 # Portfolio
 
-Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [GavickPro](http://www.gavick.com/) with some changes by <a href="https://github.com/3c7/Portfolio-Free-Ghost-Theme">3c7</a>.
+I've done some minor changes to the Portfolio Theme by [GavickPro](http://www.gavick.com/). You can get a preview [here](http://nilskuhnert.de).
 
 ------------------------------------------------------
-
-[-> DEMO <-](http://portfolio-gk.ghost.io)
+Original README:  
 
 **Important** The v.1.2.0 adds a built-in support for the post cover images - if you are using older version of the theme, you will have to set cover images for all your older posts.
 

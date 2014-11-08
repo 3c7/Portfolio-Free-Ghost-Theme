@@ -11,13 +11,12 @@
                 <meta property="article:author" content="{{author.name}}">
             {{/contentFor}}
 
-            <div class="post__wrapper--subpage">    
-                {{#if image}}
-                	<div class="post__media">
-                		<img src="{{image}}" alt="{{{title}}}" />
-                	</div>
-                {{/if}}
-
+            {{#if image}}
+                <div class="post__media">
+                    <img src="{{image}}" alt="{{{title}}}" />
+                </div>
+            {{/if}}
+            <div class="post__wrapper--subpage">   
                 <header class="post__header--subpage">
                     <h2 class="post__title post__title--subpage">
                         <a href="{{url}}" class="post__link post__title_link">{{{title}}}</a>
