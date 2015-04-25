@@ -14,6 +14,7 @@
 	2.3 Footer
 	2.4 Pagination
 3. Post items
+  3.3 Post Navigation
 4. Typography
 5. RWD
 6. Additional changes from Nils Kuhnert
@@ -60,7 +61,7 @@ h2,
 h3,
 h4,
 h5,
-h6 { 
+h6 {
 	color: #363636;
     font-family: "Montserrat";
 }
@@ -86,7 +87,7 @@ a,
 	-webkit-transition: all .75s ease-out;
 	-moz-transition: all .75s ease-out;
 	-ms-transition: all .75s ease-out;
-	transition: all .75s ease-out;	
+	transition: all .75s ease-out;
 }
 
 /* Containers */
@@ -457,7 +458,7 @@ main {
 	font-size: 12px;
 }
 
-.post__media {	
+.post__media {
     background: none;
     margin: 0 auto 50px auto;
 	padding: 15px 15px 8px 15px;
@@ -601,6 +602,79 @@ main {
 .author__subscribe {
 	font-size: 12px;
 }
+/*---------------------------------
+3.1. Post navigation
+----------------------------------*/
+
+.post__navigation {
+	height: 54px;
+	left: 0;
+	position: fixed;
+	top: 50%;
+	width: 54px;
+}
+
+.post__navigation--next {
+	left: auto;
+	right: 0;
+}
+
+.post__navigation_link {
+	background: #333;
+	border-radius: 0 50% 50% 0;
+	display: block;
+	height: 54px;
+	margin-left: -12px;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	width: 54px;
+}
+
+.post__navigation_link--next {
+	border-radius: 50% 0 0 50%;
+	margin-left: auto;
+	margin-right: -12px;
+}
+
+.post__navigation_link:hover {
+	margin-left: 0;
+}
+
+.post__navigation_link--next:hover {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.post__navigation_link--prev:hover .post__navigation_icon {
+	text-indent: -10px;
+}
+
+.post__navigation_link--next:hover .post__navigation_icon {
+	text-indent: 10px;
+}
+
+.post__navigation_icon {
+	color: #fff;
+	display: block;
+	font-size: 40px;
+	font-style: normal;
+	line-height: 45px;
+	text-align: center;
+	text-indent: 6px;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	width: 54px;
+}
+
+.post__navigation_icon--next {
+	text-indent: -6px;
+}
 
 /*---------------------------------
 4. Typography
@@ -713,9 +787,9 @@ ul {
 		padding: 72px 36px 20px 36px;
 	}
 	.post__media {
-		margin: 20px 0px 36px 0px; 
+		margin: 20px 0px 36px 0px;
 	}
-    
+
 	.post__title--subpage {
 		font-size: 26px;
 	}
@@ -748,7 +822,7 @@ ul {
 	}
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
 	body {
 		font-size: 14px;
 	}
@@ -759,7 +833,7 @@ ul {
 	.post__wrapper[data-cols="3"],
 	.post__wrapper[data-cols="4"] {
 		width: 100%;
-	}	
+	}
 }
 
 /*---------------------------------
