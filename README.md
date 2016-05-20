@@ -1,7 +1,7 @@
 # Portfolio
--------------
-This is a darker version of GavickPro's Portfolio Ghost Theme.
--------------
+## Changes to original theme
+This is a darker version of GavickPro's Portfolio Ghost Theme. Download for [Ghost > 0.6](https://github.com/3c7/Portfolio-Free-Ghost-Theme/releases/tag/v1.4.0-SNAPSHOT).
+## Original Readme
 
 
 Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [GavickPro](http://www.gavick.com/).
