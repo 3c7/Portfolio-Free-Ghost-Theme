@@ -2,22 +2,24 @@
 
 <main role="main">
     <div class="main__wrapper">
-      {{#if @blog.navigation}}
-        {{navigation}}
-      {{/if}}
+        {{#if @blog.navigation}}
+        	{{navigation}}
+        {{/if}}
 
         {{! Everything inside the #post tags pulls data from the post }}
         <article class="{{post_class}}">
         {{#post}}
-            {{#contentFor "metaTags"}}
+            {{#contentFor "metaTags"}} 
                 <meta property="article:author" content="{{author.name}}">
             {{/contentFor}}
-            {{#if image}}
-                <div class="post__media">
-                    <img src="{{image}}" alt="{{{title}}}" />
-                </div>
-            {{/if}}
-            <div class="post__wrapper--subpage">
+
+            <div class="post__wrapper--subpage">    
+                {{#if image}}
+                	<div class="post__media">
+                		<img src="{{image}}" alt="{{{title}}}" />
+                	</div>
+                {{/if}}
+
                 <header class="post__header--subpage">
                     <h2 class="post__title post__title--subpage">
                         <a href="{{url}}" class="post__link post__title_link">{{{title}}}</a>
@@ -25,7 +27,7 @@
 
                     <time datetime="{{date format='YYYY-MM-DD'}}" class="post__date">
                         {{date format="MMM, DD, YYYY"}}
-                    </time>
+                    </time> 
                 </header>
 
                 <section class="post__content">
