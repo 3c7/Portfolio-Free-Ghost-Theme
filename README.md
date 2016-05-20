@@ -1,4 +1,8 @@
 # Portfolio
+-------------
+This is a darker version of GavickPro's Portfolio Ghost Theme.
+-------------
+
 
 Free theme for [Ghost](http://github.com/tryghost/ghost/) prepared by [GavickPro](http://www.gavick.com/).
 
